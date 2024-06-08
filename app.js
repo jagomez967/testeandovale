@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     squares.forEach(square => square.addEventListener('touchstart', dragStart));
     squares.forEach(square => square.addEventListener('touchend', dragEnd));
-    squares.forEach(square => square.addEventListener('touchmove', dragLeave));
+    squares.forEach(square => square.addEventListener('touchcancel', dragLeave));
     squares.forEach(square => square.addEventListener('touchcancel', dragDrop));
     
     function dragStart() {
